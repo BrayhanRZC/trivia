@@ -70,12 +70,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Obtener los elementos del formulario de desafío
         var nombre = document.getElementById('nombre').value;
         var email = document.getElementById('email').value;
+        var celular = document.getElementById('celular').value;
+        var ciudad = document.getElementById('ciudad').value;
         var aceptaTerminos = document.getElementById("agreeCheckbox").checked;
     
     
         // Agregar datos del formulario de desafío al FormData correspondiente
         formDataDesafio.append('nombre', nombre);
         formDataDesafio.append('email', email);
+                formDataDesafio.append('celular', nombre);
+        formDataDesafio.append('ciudad', email);
         formDataDesafio.append('aceptaTerminos', aceptaTerminos);
     
         // Agregar información adicional del formulario de preguntas al FormData del formulario de desafío
