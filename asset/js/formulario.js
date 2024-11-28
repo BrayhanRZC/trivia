@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Agregar datos del formulario de desafío al FormData correspondiente
         formDataDesafio.append('nombre', nombre);
         formDataDesafio.append('email', email);
-                formDataDesafio.append('celular', nombre);
-formDataDesafio.append('departamento', departamento);
+        formDataDesafio.append('celular', celular);
+        formDataDesafio.append('departamento', departamento);
         formDataDesafio.append('ciudad', ciudad);
         formDataDesafio.append('aceptaTerminos', aceptaTerminos);
     
