@@ -1,3 +1,49 @@
+$(document).on('ready', function () {
+    $.getJSON('/DesktopModules/General/colombia.json', function (json) {
+        for (var item in json) {
+            if (json[item].departamento !== undefined) {
+                $("#departamento").append('<option value="' + json[item].departamento + '">' + json[item].departamento + '</option>');
+            }
+        }
+    });
+});
+
+function Ciudades() {
+
+    var ciudades = document.getElementById("ciudad");
+
+    for (var idx in ciudades) {
+        ciudades.remove(idx);
+    }
+
+    $("#ciudad").append('<option value="">Selecciona tu ciudad</option>')
+
+
+    var departamento = document.getElementById("departamento").value;
+
+    $.getJSON('/DesktopModules/General/colombia.json', function (json) {
+        for (var item in json) {
+            if (json[item].departamento == departamento) {
+                departamento = item;
+            }
+        }
+        $.each(json[departamento].ciudades, function (key, value) {
+            $("#ciudad").append('<option value="' + value + '">' + value + '</option>');
+        }); // close each() 
+    });
+
+}
+
+function SoloNumeros(e) {
+    var keynum = window.event ? window.event.keyCode : e.which;
+    if (keynum == 8)
+        return true;
+    return /\d/.test(String.fromCharCode(keynum));
+}
+
+
+
+
 document.getElementById('enviar').addEventListener('click', function(event) {
     event.preventDefault();
     document.getElementById('caja-preguntas').style.display = 'flex';
@@ -142,8 +188,6 @@ document.getElementById("popupTrigger").addEventListener("click", function() {
     var popup = document.getElementById("popup");
     popup.style.display = "none";
     });
-
-
 
 
 
