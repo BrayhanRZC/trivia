@@ -1,49 +1,3 @@
-$(document).on('ready', function () {
-    $.getJSON('/DesktopModules/General/colombia.json', function (json) {
-        for (var item in json) {
-            if (json[item].departamento !== undefined) {
-                $("#departamento").append('<option value="' + json[item].departamento + '">' + json[item].departamento + '</option>');
-            }
-        }
-    });
-});
-
-function Ciudades() {
-
-    var ciudades = document.getElementById("ciudad");
-
-    for (var idx in ciudades) {
-        ciudades.remove(idx);
-    }
-
-    $("#ciudad").append('<option value="">Selecciona tu ciudad</option>')
-
-
-    var departamento = document.getElementById("departamento").value;
-
-    $.getJSON('/DesktopModules/General/colombia.json', function (json) {
-        for (var item in json) {
-            if (json[item].departamento == departamento) {
-                departamento = item;
-            }
-        }
-        $.each(json[departamento].ciudades, function (key, value) {
-            $("#ciudad").append('<option value="' + value + '">' + value + '</option>');
-        }); // close each() 
-    });
-
-}
-
-function SoloNumeros(e) {
-    var keynum = window.event ? window.event.keyCode : e.which;
-    if (keynum == 8)
-        return true;
-    return /\d/.test(String.fromCharCode(keynum));
-}
-
-
-
-
 document.getElementById('enviar').addEventListener('click', function(event) {
     event.preventDefault();
     document.getElementById('caja-preguntas').style.display = 'flex';
@@ -117,7 +71,15 @@ document.addEventListener('DOMContentLoaded', function() {
         var nombre = document.getElementById('nombre').value;
         var email = document.getElementById('email').value;
         var celular = document.getElementById('celular').value;
-        var ciudad = document.getElementById('ciudad').value;
+        
+        / Obtener el valor seleccionado del campo departamento
+        var departamentoSelect = document.getElementById('departamento');
+        var departamento = departamentoSelect.options[departamentoSelect.selectedIndex].value;
+    
+        // Obtener el valor seleccionado del campo ciudad
+        var ciudadSelect = document.getElementById('ciudad');
+        var ciudad = ciudadSelect.options[ciudadSelect.selectedIndex].value;
+        
         var aceptaTerminos = document.getElementById("agreeCheckbox").checked;
     
     
@@ -125,7 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
         formDataDesafio.append('nombre', nombre);
         formDataDesafio.append('email', email);
                 formDataDesafio.append('celular', nombre);
-        formDataDesafio.append('ciudad', email);
+formDataDesafio.append('departamento', departamento);
+        formDataDesafio.append('ciudad', ciudad);
         formDataDesafio.append('aceptaTerminos', aceptaTerminos);
     
         // Agregar información adicional del formulario de preguntas al FormData del formulario de desafío
