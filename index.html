@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <title>Julius Connected 2 Grow </title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+   <!-- Icon Font Stylesheet -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+   <!-- Bootstrap core CSS -->
+   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+ 
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="./asset/css/desafio.css">
+
+    <!-- LIBRERIA SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- LIBRERIA AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+</head>
+<body >
+
+
+    <section id="caja-formulario">
+       
+        <div class="col columna_derecha columna_formulario_desafio">
+          <form id="desafioForm"  class="container mt-5 container_formulario">
+              <div class="row">
+                  <div class="d-flex flex-wrap formulario-desafio ">
+                      <div class="col-lg-6 mb-3 campos">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="nombre">
+                      </div>
+    
+    
+                      <div class="col-lg-6 mb-3 campos">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required="">
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 mb-3 campos">
+                    <input type="checkbox" class="form-check-input" id="aceptoInformacion">
+                    <label class="form-check-label "> *Quiero recibir noticias y ofertas exclusivas.
+                  </label>
+                 </div>
+
+                  <div class="col-lg-6 mb-3 campos d-flex" id="popupTrigger">
+                        <input type="checkbox" value="si" class="form-check-input" id="agreeCheckbox">
+                        <label class="form-check-label ps-2" for="agreeCheckbox" > Acepto los términos y condiciones y autorizo el tratamiento de mis datos personales
+                      </label>
+                  </div>
+                  
+                  
+
+              </div>
+
+    
+              </div>
+              <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary btn_friko enviar" id="enviar">Empezar</button>
+              </div>  
+          </form>
+          
+        </div>
+      
+
+    </section>
+
+
+    <section id="caja-preguntas" style="display: none;" >
+
+
+      <div class="col columna_derecha_formulario">
+                  
+          <div class="caja_preguntas">
+                          <!-- Barra de progreso -->
+                          <div class="progress mb-3">
+                              <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          
+                          <!-- Formulario -->
+        
+                          <form id="form-pasos">
+                              <div class="form-group paso paso-1">
+                              <label for="paso1" class="titulo_pregunta">1. ¿Por qué en Halloween se regalan dulces?</label><br>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso1" id="paso1A" value="A">
+                                  <label class="form-check-label" for="paso1A">A. Para premiar el disfraz más creativo de la noche.</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso1" id="paso1B" value="B">
+                                  <label class="form-check-label" for="paso1B">B. Se daban a los espíritus como regalo para que se sintieran bienvenidos en la tierra.</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso1" id="paso1C" value="C">
+                                  <label class="form-check-label" for="paso1C">C. Es una tradición Colombiana para compartir en el barrio</label>
+                              </div>
+                              </div>
+                              
+                              <div class="form-group paso paso-2" style="display: none;">
+                              <label for="paso2" class="titulo_pregunta">2. ¿Cuál es la Línea Maestro de Lorenzano?</label><br>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso2" id="paso2A" value="A">
+                                  <label class="form-check-label" for="paso2A">A. La línea premium, con sabores 100% naturales, sin nitritos ni nitratatos adicionados y empaque 100% reciclable.</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso2" id="paso2B" value="B">
+                                  <label class="form-check-label" for="paso2B">B.  La línea únicamente de salchichas.</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso2" id="paso2C" value="C">
+                                  <label class="form-check-label" for="paso2C">C. Todas las anteriores.</label>
+                              </div>
+    
+                              </div>
+                              
+                              <div class="form-group paso paso-3 " style="display: none;">
+                              <label for="paso3" class="titulo_pregunta">3. ¿Cuál es la frase representativa de Lorenzano?</label><br>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso3" id="paso3A" value="A">
+                                  <label class="form-check-label" for="paso3A">A. Sabor exquisito para cada receta.</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso3" id="paso3B" value="B">
+                                  <label class="form-check-label" for="paso3B">B. Diferente por naturaleza.</label>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="paso3" id="paso3C" value="C">
+                                  <label class="form-check-label" for="paso3C">C.  Diferente y delicioso para tus recetas</label>
+                              </div>
+                            
+                              </div>
+                              
+                            
+                          </form>
+                        
+
+          </div>
+
+          <div class="botones">
+            <button type="button" class="btn btn_friko2 btn-atras" style="display: none;">Atrás</button>
+            <button type="button" class="btn btn_friko btn-siguiente">Siguiente</button>
+            <button type="button" class="btn btn_friko btn-enviar" id="submitBtn" style="display: none;">Enviar</button>
+            
+          </div> 
+              
+        
+
+         
+  
+      </div>
+
+  </section>
+
+
+
+  <div class="popup" id="popup">
+    <div class="popup-inner">
+      <button type="button" class="btn-close" id="closePopupButton"></button>
+      <p>Manifiesto que otorgo autorización a favor de    OPERADORA AVICOLA COLOMBIA S.A.S identificada con NIT 891401858 ubicada en Envigado - CR 48 NO 27A SUR 89 en calidad de RESPONSABLE podrá recolectar, tratar, usar, ceder, transferir o transmitir a terceros o encargados en Colombia o en el exterior los datos personales obtenidos a través de la suscripción realizada. He leído la Política de Tratamiento de Datos Personales disponible en el sitio web <a target="_blank" href="https://www.grupobios.co/sostenibilidad/gobierno-corporativo">https://www.grupobios.co/sostenibilidad/gobierno-corporativo</a>  por ello, consiento y autorizo de manera previa, expresa e inequívoca que mis datos personales sean tratados para el cumplimiento de las siguientes finalidades:
+      </p>
+      <p>
+          I. contactarme,<br>
+          II. comunicarme campañas publicitarias y mercadeo mediante email marketing, mensajes de texto al celular, contacto telefónico, mensajes emergentes, notificaciones y mensajes publicitarios;<br>
+          III. recibir información de los productos y servicios prestados o comercializados por la compañía;<br>
+          IV. realizar estudios sobre hábitos de consumo y preferencias, evaluar la calidad de los servicios prestados por la compañía;<br>
+          V. gestionar trámites (peticiones, quejas y reclamos); y las demás estipulados en la política para el tratamiento de datos personales de la compañía.
+      </p>
+      <h5>Como titular tengo los siguientes derechos:</h5>
+      <p>
+          I. Acceder en forma gratuita a los datos proporcionados que hayan sido objeto de tratamiento.<br>
+          II. Solicitar la actualización y rectificación de su información frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o a aquellos cuyo tratamiento esté prohibido o no haya sido autorizado.<br>
+          III. Solicitar prueba de la autorización otorgada.<br>
+          IV. Presentar ante la Superintendencia de Industria y Comercio (SIC) o autoridad competente quejas por infracciones a lo dispuesto en la normatividad vigente.<br>
+          V. Revocar la autorización y/o solicitar la supresión del dato, a menos que exista un deber legal o contractual que haga imperativo conservar la información.<br>
+          VI. Abstenerme de responder las preguntas sobre datos sensibles o sobre datos de las niñas y niños y adolescentes.<br>
+          Podré ejercer los derechos de consulta, supresión y revocación dirigiendo mi solicitud al correo electrónico <a href="mailto:datospersonales@grupobios.co">datospersonales@grupobios.co</a>
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="error-popup">
+      <span class="error-popup-icon">&#9888;</span> Debes seleccionar una respuesta.
+    </div>
+ 
+    <!-- spinner y popup de envio  -->
+    <div class="overlay" style="display: none;"></div>
+      <div class="spinner-popup" style="display: none;">
+      <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+      </div>
+      <p>Un momento por favor, serás redirigido <br>a otra página de confirmación...</p>
+    </div>
+
+   
+
+        
+
+
+
+     <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+
+ 
+  <script src="./asset/js/swiper.js"></script>
+  <script src="./asset/js/formulario.js"></script>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/dea03a73e8.js" crossorigin="anonymous"></script>
+
+
+
+  
+</body>
+</html>

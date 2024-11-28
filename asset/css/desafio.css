@@ -1,0 +1,578 @@
+/** ESTILOS GENERALES **/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+
+    background-color: #ffffff00;
+
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+        .container-desafio{
+            max-width: 1100px;
+        }
+
+        #caja-formulario{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            background-color: #f6f3f300;
+
+
+        }
+
+        #caja-preguntas{
+            height: 100vh;
+            display: flex;
+            background-color: #f6f3f300;
+            width: 100vw;
+
+
+        }
+
+        .columna-formulario{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+
+        .btn_friko {
+        background-color: #ffb601;
+        color: #034a28;
+        padding: 14px 24px 14px 24px;
+        border-radius: 6px;
+        border:none;
+        font-weight: 700;
+        font-family: Montserrat, sans-serif ;
+        transition:0.7s;
+        margin: 20px 20px 0px 0px;
+        }
+
+        .btn_friko:hover {
+        background-color: #034a28;
+        color: #ffb601;
+        padding: 14px 24px 14px 24px;
+        border-radius: 6px;
+        border:none;
+        font-weight: 700;
+        font-family: Montserrat, sans-serif ;
+
+        }
+
+
+        .btn_friko2{
+
+        background-color: #034a28;
+        color: #ffb601;
+        padding: 14px 24px 14px 24px;
+        border-radius: 6px;
+        border:none;
+        font-weight: 700;
+        font-family: Montserrat, sans-serif ;
+        transition:0.7s;
+        margin: 20px 03px 0px 0px;
+
+        }
+
+
+        .btn_friko2:hover {
+            background-color: #001789;
+            color: #ffff;
+            padding: 14px 24px 14px 24px;
+            border-radius: 6px;
+            border:none;
+            font-weight: 700;
+            font-family: Montserrat, sans-serif ;
+    
+            }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        li,
+        ul,
+        p {
+            color: #034a28;
+            font-family: montserrat, sans-serif;
+            font-weight: 300;
+        }
+
+        .titulo{
+            color: #001789;
+            font-family: montserrat, sans-serif;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .formulario{
+            height: 10vh;
+            color: antiquewhite;
+        }
+
+        .form-check-input:checked{
+            background-color: #00ffbc;
+            border-color: #00ffbc;
+        }
+
+
+    .container_formulario{
+        width: 80%;
+    }
+
+    .columna_formulario{
+        padding: 50px 0px 0px 0px;
+    }
+
+       
+
+/** FIN ESTILOS GENERALES **/
+
+
+/***************************************************/
+
+
+/** COLUMNA IZQUIERDA **/
+
+        .imagen_desafio{
+
+            width: 50vw;
+
+        }
+        .columna_izquierda{
+
+            background-image: url(https://www.momentosfriko.com/Portals/MomentosFriko/2024/Desafio/BG-FUTBOL.png);
+        background-position: center;
+        /* max-width: 100%; */
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        }
+
+        .columna_izquierda2{
+
+            background-image: url(https://www.momentosfriko.com/Portals/MomentosFriko/2024/Desafio/img_pregunta.png);
+        background-position: center;
+        /* max-width: 100%; */
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        }
+
+   
+
+/** COLUMNA IZQUIERDA **/
+
+/***************************************************/
+
+
+
+/** COLUMNA DERECHA **/
+
+
+        .columna_derecha_formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            color:#FDFBFB;
+            padding: 0px 0px 0px 0px;
+
+        }
+
+        .columna_formulario_desafio{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+           
+            color:#FDFBFB;
+
+        }
+
+
+        .descripcion{
+            text-align: center;
+        }
+        
+        .campos {
+            padding: 0px 20px;
+            width: 50%;
+        }
+
+/** END COLUMNA DERECHA **/
+
+
+ /***************************************************/
+
+
+ .footer_desafio {
+    margin: auto;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .texto_social{
+    margin-right: 20px;
+ }
+
+ .icon_social a{
+    text-decoration: none;
+    margin: 0px 4px;
+    color: #001789;
+    transition:0.7s;
+}
+
+.icon_social a:hover{
+    text-decoration: none;
+    margin: 0px 4px;
+    color: #F7C90A;  
+    transition:0.7s;
+}
+
+.fa-brands{
+    font-size: 20px;
+}
+
+.botones{
+
+    padding: 0px 50px 50px 50px;
+    
+}
+
+
+/** Footer **/
+
+
+
+
+/***************************************************/
+
+
+/** PREGUNTAS **/
+
+.titulo_pregunta{
+    margin-bottom: 30px;
+}
+
+label{
+    color: #FEF4D0;
+    font-weight: 300;
+
+}
+
+.paso{
+    margin-top: 6vh;
+    margin-bottom: 10vh;
+}
+
+.caja_preguntas{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 6px;
+    padding: 50px 50px 0px 50px;
+    width: 100%;
+}
+
+.titulo_pregunta{
+    color: #00ffbc;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.progress-bar-custom {
+
+    background-color: #00ffbc; /* Color personalizado de la barra de progreso */
+  }
+  .paso {
+    position: relative;
+  }
+  .paso:not(:first-child) {
+    display: none;
+  }
+  .error-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+  .error-popup-icon {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 9998; /* Por debajo del spinner */
+  }
+  
+  .spinner-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Por encima del overlay */
+    background-color: white; /* Fondo blanco */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .spinner-popup p {
+    margin-top: 10px;
+  }
+  
+  .loading-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+
+
+
+
+/** MEDIA QUERYS MEDIA **/
+
+ @media (min-width: 1400px) {
+            .container{
+                max-width: 1100px;
+            }
+
+            
+        }
+
+
+
+    /** phone **/
+
+        @media only screen and (max-width: 800px) 
+{
+        #caja-formulario{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff00 !important;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .campos{
+            width: 100%;
+        }
+
+        .formulario-desafio{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        #caja-preguntas{display: flex;
+            flex-direction: column;
+            background-color: #ffffff00;}
+
+        .columna_derecha{
+            width: 100%;
+        }
+
+        .imagen_desafio{
+            width: 100%;
+            height: auto;
+        }
+
+        .caja_preguntas{
+            width: 100%;
+        }
+
+        .paso{
+            margin-bottom: 30px;
+            margin-top: 4vh;
+        }
+
+        .footer_desafio{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .columna_izquierda {
+            background-image: url(https://www.momentosfriko.com/Portals/MomentosFriko/2024/Desafio/Img_inicio.png);
+            background-position: center;
+            height: 50vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .columna_izquierda2 {
+            background-image: url(https://www.momentosfriko.com/Portals/MomentosFriko/2024/Desafio/img_pregunta.png);
+            background-position: center;
+            height: 60vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .columna_derecha_formulario {
+            color: #FDFBFB;
+            padding: 0px 0px 0px 0px;
+            width: 100%;
+        }
+
+        .caja_preguntas {
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 6px;
+            padding: 0px;
+            width: 100%;     
+        }
+
+        .botones {
+            padding: 0px ;
+        }
+            
+
+        
+
+       
+ }
+
+
+
+
+
+
+ .descripcion-gracias{
+    font-weight: 800;
+    color: #001789;
+    text-align: center;
+}
+
+.texto_gracias{
+    font-weight: 900;
+    color: #F7C90A;
+    text-align: center;
+}
+
+#banner-desafio{
+    width: 100vw;
+    height: auto;
+}
+
+.banner_gracias{
+    width: 100%;
+}
+
+
+#info-gracias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 50px 0px 50px 0px;
+    font-size: 2rem;
+}
+
+.info-cupon{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cupon{
+    width: 400px;
+    height: auto;
+    padding: 20px 40px 20px 40px;
+    background-color: #F7C90A;
+    border: solid 3px #001789 ;
+    border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+}
+
+.descuento{
+    font-weight: 900;
+    text-align: center;
+    margin: 0px;
+}
+
+.texto-footer-cupon{
+    font-size: 20px;
+}
+
+.btn-footer-cupon{
+    font-weight: 900;
+}
+
+.footer_desafio2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* Estilos para el popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-inner {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    overflow: scroll;
+  }
+
+  #closePopupButton{
+    position: relative;
+    left: 94%;
+    top: 0px;
+    /* right: 100px; */
+    bottom: 0px;
+    color:#ffffff;
+    background-color: #F7C90A;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
