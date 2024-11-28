@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var email = document.getElementById('email').value;
         var celular = document.getElementById('celular').value;
         
-        / Obtener el valor seleccionado del campo departamento
+        // Obtener el valor seleccionado del campo departamento
         var departamentoSelect = document.getElementById('departamento');
         var departamento = departamentoSelect.options[departamentoSelect.selectedIndex].value;
     
