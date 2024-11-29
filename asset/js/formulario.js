@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.overlay').style.display = 'none';
             document.querySelector('.spinner-popup').style.display = 'none';
             // Redirige a la siguiente URL después de enviar el formulario con éxito
-            window.top.location.href = 'https://www.lorenzano.co/adviento-gracias';
+            window.top.location.href = 'https://www.lorenzano.co/trivia-gracias';
         }, 6000);
     }
         mostrarPopup();
